@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+section{
+    padding-block: 30px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+/* ------------------------nav */
+nav .navbar-nav .nav-item .nav-link{
+    padding-inline: 22px;
+    font-size: 18px;
+    color: red;
+}
+nav .navbar-nav .nav-item .nav-link:hover{
+    color: white;
+}
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  /* background: #e1e1e1; */
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(243, 45, 45);;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  
+}
+
+/* -----------------------------banner */
+
+.white-text-with-blue-shadow {
+  text-shadow:
+    1px 1px 2px black,
+    0 0 4em rgb(33, 36, 209),
+    0 0 0.2em rgb(243, 45, 45);
+  color: rgb(243, 45, 45);
+
+}
+.hero-banner .text-banner p{
+    line-height: 1.7;
+    color: gray;
+    width: auto;
+}
+.hero-banner .text-banner a{
+    transition: 0.3s;
+}
+.hero-banner .text-banner a:hover{
+    padding: 10px 50px;
+    display: inline-block;
+    background-color: rgb(243, 45, 45) ;
+}
+/* ------------------------brand-area */
+.brand-area {
+    background-color: rgb(244, 234, 234);
+}
+.brand-area .logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.brand-area .logo{
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+/* ------------------------product-area */
+.product-area .card{
+    overflow: hidden;
+    
+}
+.product-area .card:hover img{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.product-area .card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s;
+}
+/* ---------------------product-area */
